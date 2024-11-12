@@ -5,11 +5,11 @@
  * this file be licensed under the Apache-2.0 license or a
  * compatible open source license.
  */
-package org.example.path.to.plugin;
+
+package org.opensearch.arrow;
 
 import org.opensearch.plugins.Plugin;
 
-
-public class RenamePlugin extends Plugin {
+public class OpensearchArrowPlugin extends Plugin {
     // Implement the relevant Plugin Interfaces here
 }

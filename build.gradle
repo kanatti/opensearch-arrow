@@ -7,16 +7,16 @@ apply plugin: 'opensearch.opensearchplugin'
 apply plugin: 'opensearch.yaml-rest-test'
 apply plugin: 'opensearch.pluginzip'
 
-def pluginName = 'rename'
-def pluginDescription = 'Custom plugin'
-def packagePath = 'org.example'
-def pathToPlugin = 'path.to.plugin'
-def pluginClassName = 'RenamePlugin'
-group = "RenameGroup"
+def pluginName = 'opensearch-arrow'
+def pluginDescription = 'OpenSearch plugin that enables efficient Arrow-based responses for returning large datasets.'
+def packagePath = 'org.opensearch'
+def pathToPlugin = 'arrow'
+def pluginClassName = 'OpensearchArrowPlugin'
+group = "OpensearchArrowGroup"
 
 java {
-    targetCompatibility = JavaVersion.VERSION_21
-    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_17
 }
 
 tasks.register("preparePluginPathDirs") {
