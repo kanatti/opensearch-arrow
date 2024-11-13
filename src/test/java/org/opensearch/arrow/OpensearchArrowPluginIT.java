@@ -10,8 +10,9 @@ package org.opensearch.arrow;
 
 
 import com.carrotsearch.randomizedtesting.annotations.ThreadLeakScope;
-import org.apache.hc.core5.http.ParseException;
-import org.apache.hc.core5.http.io.entity.EntityUtils;
+
+import org.apache.http.ParseException;
+import org.apache.http.util.EntityUtils;
 import org.hamcrest.MatcherAssert;
 import org.opensearch.client.Request;
 import org.opensearch.client.Response;
