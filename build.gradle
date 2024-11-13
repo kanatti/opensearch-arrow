@@ -19,16 +19,6 @@ java {
     sourceCompatibility = JavaVersion.VERSION_17
 }
 
-tasks.register("preparePluginPathDirs") {
-    mustRunAfter clean
-    doLast {
-        def newPath = pathToPlugin.replace(".", "/")
-        mkdir "src/main/java/$packagePath/$newPath"
-        mkdir "src/test/java/$packagePath/$newPath"
-        mkdir "src/yamlRestTest/java/$packagePath/$newPath"
-    }
-}
-
 publishing {
     publications {
         pluginZip(MavenPublication) { publication ->
@@ -43,8 +33,8 @@ publishing {
               }
               developers {
                 developer {
-                  name = "OpenSearch"
-                  url = "https://github.com/opensearch-project/opensearch-plugin-template-java"
+                  name = "Balagopal Kanattil"
+                  url = "https://github.com/kanatti/opensearch-arrow"
                 }
               }
             }
